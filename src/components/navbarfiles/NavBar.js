@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './Navabar.css'
 import  Logo from '../../images/logo.png'
 import { NavLink } from 'react-router-dom'
 
@@ -43,9 +44,20 @@ const NavBar = () => {
            </div>
           </ul>
         </li>
-        <li className="nav-item">
-          <NavLink to="About us" className={({ isActive }) => (isActive ? 'active nav-link' : 'nav-link')}
-                onClick={click ? handleClick : null} >About us</NavLink>
+        <li className="nav-item dropdown">
+          <NavLink to="About-Us" className={({ isActive }) => (isActive ? 'active nav-link dropdown-toggle' : 'nav-link dropdown-toggle')}
+                onClick={click ? handleClick : null}  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About Us
+          </NavLink>
+          <ul className="dropdown-menu about" aria-labelledby="navbarDropdownMenuLink">
+           <div  className="row">
+             <div className="col-md-6">
+             <li><NavLink to="/action" className="dropdown-item" >Action</NavLink></li>
+            <li><NavLink to="/another" className="dropdown-item" >Another action</NavLink></li>
+            <li><NavLink to="/sometext" className="dropdown-item" >Something else here</NavLink></li>
+             </div>
+           </div>
+          </ul>
         </li>
         <li className="nav-item">
           <NavLink to="Contact us" className={({ isActive }) => (isActive ? 'active nav-link' : 'nav-link')}

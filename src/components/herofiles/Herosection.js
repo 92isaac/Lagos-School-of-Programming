@@ -1,4 +1,5 @@
 import React from 'react'
+import './Herosection.css'
 import HeroImg from '../../images/heroimage.png'
 import Lasop from '../../images/Lasop.png'
 

@@ -13,3 +13,5 @@ const howitworkitem = [
     }
 
 ]
+
+export default howitworkitem;
