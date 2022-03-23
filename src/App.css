@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,200;1,300;1,400;1,700&display=swap');
+
+.nav-item{
+    padding-left: 30px;
+}
+.navbar{
+    /* background-color: #E5E5E5; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navigation span{
+    z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-item .active {
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .dropdown-menu{
+      min-width: 450px !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .hero{
+      /* background-color: #E5E5E5; */
+      min-height: 88vh;
   }
-}
+
+  .col-md-5 img{
+      margin-left: 100px;
+      width: 400px;
+      height: 80vh;
+  }
+
+  .col-md-7 h1{
+    font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 50px;
+      line-height: 60px;
+  }
+
+  .h1-at{
+      color: #ff0000;
+  }
+
+  .h1-lasop{
+      color: #11A3E3;
+  }
+
+  .h1-static{
+      text-decoration: line-through;
+      text-decoration-color: #ff0000;
+      
+  }
+
+  .h1-dynamic{
+    background: url(./images/dynamic.png);
+    background-repeat: no-repeat;
+  }
+
+  .lasop h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    z-index: 1;
+    letter-spacing: 0.3rem;
+  }
+
+  .lasop img{
+      width: 97vw;
+      height: 35px;
+      position: absolute;
+      top: 90%;
+      z-index: -1;
+  }
