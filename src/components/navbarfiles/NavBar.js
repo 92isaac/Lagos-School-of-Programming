@@ -52,11 +52,14 @@ const NavBar = () => {
           <ul className="dropdown-menu about" aria-labelledby="navbarDropdownMenuLink">
            <div  className="row">
              <div className="col-md-6">
-             <li><NavLink to="/action" className="dropdown-item" >Action</NavLink></li>
+             <li><NavLink to="/company" className="dropdown-item" >The Company</NavLink></li>
             <li><NavLink to="/another" className="dropdown-item" >Another action</NavLink></li>
             <li><NavLink to="/sometext" className="dropdown-item" >Something else here</NavLink></li>
              </div>
            </div>
+
+
+
           </ul>
         </li>
         <li className="nav-item">
