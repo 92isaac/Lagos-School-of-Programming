@@ -53,8 +53,9 @@ const NavBar = () => {
            <div  className="row">
              <div className="col-md-6">
              <li><NavLink to="/company" className="dropdown-item" >The Company</NavLink></li>
-            <li><NavLink to="/another" className="dropdown-item" >Another action</NavLink></li>
-            <li><NavLink to="/sometext" className="dropdown-item" >Something else here</NavLink></li>
+            <li><NavLink to="/team" className="dropdown-item" >The Team</NavLink></li>
+            <li><NavLink to="/mentor" className="dropdown-item" >The Mentors</NavLink></li>
+            <li><NavLink to="/director" className="dropdown-item" >Non-Executive Directors</NavLink></li>
              </div>
            </div>
 
@@ -67,7 +68,7 @@ const NavBar = () => {
                 onClick={click ? handleClick : null} >Contact us  |</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="Blog" className={({ isActive }) => (isActive ? 'active nav-link' : 'nav-link')}
+          <NavLink to="/blog" className={({ isActive }) => (isActive ? 'active nav-link' : 'nav-link')}
                 onClick={click ? handleClick : null} >  Blog</NavLink>
         </li>
       </ul>

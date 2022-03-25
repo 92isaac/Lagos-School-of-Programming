@@ -3,15 +3,17 @@ import './Footer.css'
 import FOOTLOGO from '../../images/logo.png'
 // import {Link}from 'react-router-dom'import 
 import POL from '../../images/Polygon-1.png'
-import POL1 from '../../images/Polygon-2.png'
+import LINE from '../../images/Line5.png'
 
 function Footer() {
   return (
     <div>
         <div className='footer-grids'>
+         <div className='block'>
+         
             <div className='footer-grid1'>
                 <a href='/'>
-               <img src={FOOTLOGO} alt='' className='foot-img' width="200" height="50"/>
+               <img src={FOOTLOGO} alt='' className='foot-img'/>
                </a>
 
                <p>At <span>LASOP</span>, we are not static but dynamic. We are evolving with latest trends in technology. We are determined to meet the demands of our students and making Nigeria the tech-hub of Africa and the world at large.</p>
@@ -31,7 +33,10 @@ function Footer() {
                <br/>
                <a href="https://linkedin.com/company/lasopdotnet" target="_blank"><i className="fa-brands fa-linkedin"></i>LinkedIn</a>
             </div>
-            
+          </div>
+
+          <div className='mobile'>
+
             <div className='Footer-grid2'>
                 <h5>Quick Links</h5>
                 <a href='/blog'>Our Blog</a>
@@ -39,20 +44,26 @@ function Footer() {
                 <a href='/faq'>FAQ</a>
 
             </div>
+
+            <div class="line">
+                <img src={LINE}/>
+            </div>
             <div className='Footer-grid3'>
                 <h5>About</h5>
                 <a href='/company'>The Company</a>
                 <a href='/team'>The Team</a>
                 <a href='/mentor'> The Course Mentor</a>
                 <a href='/director'>Non Executive Director</a>
+          </div>
+            
 
             </div>
             <div className='Footer-grid4'>
                 <img src={POL} className='pol1' />
-                <img src={POL1} className='pol2'/>
             </div>
 
         </div>
+        <p className='copy'>&copy;2022 Lagos School of Programming|All Right Reserved</p>
     </div>
   )
 }
