@@ -21,8 +21,13 @@
   }
 
 
+
+  footer{
+      margin-top: 0;
+  }
+
 .footer-grids{
-    margin: 50px 0 0 0;
+    /* margin: 0p 0 0 0; */
     background-color:#000208;
     color: #ffffff;
     display: grid;
@@ -304,7 +309,7 @@
   
   .Footer-grid4 img{
       width: 250px;
-      margin-left: -269px;
+      margin-left: -2px;
       margin-top: 82px;
   } 
 
@@ -324,7 +329,7 @@
       color: #ffffff;
       display: grid;
       grid-template-columns: auto; 
-      height: 1100px;
+      height: 910px;
   
   } 
   
@@ -408,7 +413,7 @@
   } 
 
   .mobile{
-      margin-top: -335px;
+      margin-top: -100px;
 
   }
 
@@ -420,7 +425,7 @@
 
 .copy{
     text-align: center;
-    margin-top: -345px;
+    margin-top: -50px;
     font-size: 12px;
 }
 
