@@ -9,6 +9,7 @@ import GAL6 from '../images/6.png'
 import GAL7 from '../images/7.png'
 import GAL8 from '../images/8.png'
 
+
 function Gallery() {
   return (
     <div>
@@ -28,6 +29,7 @@ function Gallery() {
            <img src={GAL8} alt='' className='gallery-img'/>
 
        </div>
+
     </div>
   )
 }

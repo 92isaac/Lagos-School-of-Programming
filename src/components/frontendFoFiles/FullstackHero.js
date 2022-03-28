@@ -1,6 +1,8 @@
 import React from 'react';
 import Video from '../commonfiles/Video';
 import Button from '../commonfiles/Button';
+import Modal from '../commonfiles/Modal';
+
 
 const FullstackHero =()=>{
     return (<div className="container-fluid fullstackhero">
@@ -34,18 +36,19 @@ const FullstackHero =()=>{
 
             <div className="row justify-content-md-center mt-5">
                 <div className="col-md-6 ">
-                <Button 
-                link='/'
-                class="btn btn-light"
-                btnName="Apply Now: Weekday"
-                />
+
+                    <Modal 
+                        className="btn btn-light"
+                        btnName="Apply Now: Weekday"
+                    />
                 </div>
                 <div className="col-md-6 ">
-                <Button 
-                link='/'
-                class="btn btn-blue border-white text-light"
-                btnName="Apply Now: Weekend"
-                />
+
+
+                <Modal 
+                    className="btn btn-blue border-white text-light"
+                    btnName="Apply Now: Weekend"
+                    />
                 </div>
             </div>
             </div>

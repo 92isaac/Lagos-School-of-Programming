@@ -1,5 +1,7 @@
 import React from 'react'
 import Button from '../commonfiles/Button'
+import Modal from '../commonfiles/Modal';
+
 
 
 const HeroTextSection =()=>{
@@ -54,6 +56,9 @@ requiring you to combine your theoretical and quantitative understanding in an o
                 class="btn btn-blue border-white btn-color"
                 btnName="Download Propectus"
                 />
+
+       <Modal />
+
     </div>
 
         </div>

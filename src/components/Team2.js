@@ -1,5 +1,4 @@
 import React from 'react'
-import MAN from '../images/unsplash_RiDxDgHg7pw.png'
 import './Team2.css'
 import Dictionary from './Dictionary'
 import Expert from './Expert'
@@ -27,11 +26,6 @@ function Team2() {
         </div>
 
         <div className='bod'>
-            {/* <div>
-                <img src={MAN} alt=''className=''/>
-           <h5>Renee Kling</h5>
-           <h4>CEO and founder</h4>
-            </div> */}
         {
             Dictionary.map(Career)
         }

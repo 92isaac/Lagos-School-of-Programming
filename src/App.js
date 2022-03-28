@@ -5,7 +5,6 @@ import Home from './components/pages/Home'
 import Fullstack from './components/frontendFoFiles/Fullstack'
 import FAQPage from './components/faqfiles/FAQPage'
 import Footer from './components/Footerfiles/Footer';
-// import Home from './components/pages/Home'
 import Company from './components/Company'
 import Executive from './components/Executive'
 import Contact from './components/Contact'
@@ -20,9 +19,6 @@ function App() {
 <Route path="/" element={ <Home/> } />
 <Route path="/fullstack" element={ <Fullstack/> } />
 <Route path="/FAQPage" element={ <FAQPage/> } />
-
-
-{/* <Routes> */}
 <Route path="/" element={ <Home/> } />
 <Route path="/company" element={ <Company/> } />
 <Route path="/team" element={ <Team2/> } />

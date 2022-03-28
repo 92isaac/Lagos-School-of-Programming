@@ -1,6 +1,6 @@
 import React from 'react'
 import './CompanyDescription.css'
-import CompanyNav from './navbarfiles/CompanyNav'
+// import CompanyNav from './navbarfiles/CompanyNav'
 import VID from '../videos/video-3.mp4'
 import VideoPlayer from 'react-video-js-player'
 
