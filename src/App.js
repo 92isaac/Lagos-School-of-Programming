@@ -1,8 +1,17 @@
 import './App.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './components/pages/Home'
 import Fullstack from './components/frontendFoFiles/Fullstack'
 import FAQPage from './components/faqfiles/FAQPage'
+import Footer from './components/Footerfiles/Footer';
+// import Home from './components/pages/Home'
+import Company from './components/Company'
+import Executive from './components/Executive'
+import Contact from './components/Contact'
+import Team2 from './components/Team2'
+import Mentors from './components/Mentors'
+import Blog from './components/pages/Blog'
 
 function App() {
   return (
@@ -11,7 +20,18 @@ function App() {
 <Route path="/" element={ <Home/> } />
 <Route path="/fullstack" element={ <Fullstack/> } />
 <Route path="/FAQPage" element={ <FAQPage/> } />
+
+
+{/* <Routes> */}
+<Route path="/" element={ <Home/> } />
+<Route path="/company" element={ <Company/> } />
+<Route path="/team" element={ <Team2/> } />
+<Route path="/mentor" element={ <Mentors/> } />
+<Route path="/director" element={ <Executive/> } />
+<Route path="/contact" element={ <Contact/> } />
+<Route path="/blog" element={ <Blog/> } />
 </Routes>
+<Footer/> 
     </Router>
   );
 }
