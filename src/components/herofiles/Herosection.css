@@ -1,6 +1,10 @@
+html{
+    font-size: 99%;
+}
 .hero{
     background-color: #E5E5E5;
     min-height: 88vh;
+    width: 100%;
 }
 
 .col-md-5 img{
@@ -50,4 +54,15 @@
     position: absolute;
     top: 90%;
     z-index: -1;
+}
+
+@media screen and (max-width: 1100px) {
+
+    html{
+        font-size: 70%;
+    }
+
+    .col-md-5 img{
+        width: 72%;
+    }
 }

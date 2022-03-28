@@ -18,7 +18,7 @@ const Herosection = () =>{
 
                 </div>
                 <div className="col-md-5 col-sm-12">
-                    <img src={HeroImg} alt="heroimage" />
+                    <img src={HeroImg} alt="heroimage" className="img-fluid" />
                 </div>
                 <div className="lasop"> <img src={Lasop} alt="" /> </div>
             </div>

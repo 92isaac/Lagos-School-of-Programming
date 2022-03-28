@@ -1,15 +1,24 @@
 import React from 'react'
+import howitworkdic from './howitworkdic'
+import HowItWorkMap from './HowItWorkMap'
+
+const HowItworkControl =(work, index )=>{
+  return <HowItWorkMap 
+  key={index}
+  howItWorkImg={work.howItWorkImg}
+  howItworkTitle={work.howItworkTitle}
+  howItWorkMsg={work.howItWorkMsg}
+
+  
+  />
+}
 
 const HowItWork = () => {
   return (
-    <div className="constainer">
-        <h1>How it works</h1>
-        <div className="row">
-            <div className="col-md-4">
-                <img src="" alt=""/>
-                <h3>Tincidunt in facilisis.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis scelerisque pharetra, amet, senectus dictum nisl adipiscing diam posuere. Aenean commodo mattis aliquam at velit tellus eget sed. Morbi purus nisl</p>
-            </div>
+    <div className="constainer text-center pt-5">
+        <h1 className="text-center pt-3">How it works</h1>
+        <div className="row mx-5">
+               {howitworkdic.map(HowItworkControl)}
         </div>
     </div>
   )

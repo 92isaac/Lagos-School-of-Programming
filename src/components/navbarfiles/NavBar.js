@@ -10,7 +10,7 @@ const NavBar = () => {
   const Close = () => setClick(false);
 
   return (
- <div className={click ? "main-container" : ""}  onClick={()=>Close()}>
+ <div >
 
 <nav className="navbar navbar-expand-lg " onClick={e => e.stopPropagation()}>
   <div className="container-fluid mx-5">
@@ -24,7 +24,7 @@ const NavBar = () => {
           <NavLink to="/"  className={({ isActive }) => (isActive ? 'active nav-link' : 'nav-link')}
                 onClick={click ? handleClick : null} aria-current="page" > Home </NavLink>
         </li>
-        <li className="nav-item dropdown">
+        <li className="nav-item dropdown" data-bs-autoclose="outside">
           <NavLink to="Courses" className={({ isActive }) => (isActive ? 'active nav-link dropdown-toggle' : 'nav-link dropdown-toggle')}
                 onClick={click ? handleClick : null}  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Courses
@@ -44,7 +44,7 @@ const NavBar = () => {
            </div>
           </ul>
         </li>
-        <li className="nav-item dropdown">
+        <li className="nav-item dropdown" data-bs-autoclose="outside">
           <NavLink to="About-Us" className={({ isActive }) => (isActive ? 'active nav-link dropdown-toggle' : 'nav-link dropdown-toggle')}
                 onClick={click ? handleClick : null}  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             About Us
