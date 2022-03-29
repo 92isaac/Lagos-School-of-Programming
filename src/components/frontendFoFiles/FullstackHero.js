@@ -1,6 +1,6 @@
 import React from 'react';
 import Video from '../commonfiles/Video';
-import Button from '../commonfiles/Button';
+// import Button from '../commonfiles/Button';
 import Modal from '../commonfiles/Modal';
 
 

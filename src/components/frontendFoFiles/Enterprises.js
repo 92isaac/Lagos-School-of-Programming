@@ -1,5 +1,7 @@
 import React from 'react'
-import Button from '../commonfiles/Button'
+// import Button from '../commonfiles/Button'
+import Modal from '../commonfiles/Modal';
+
 
 
 
@@ -64,7 +66,7 @@ International students who require a Student visa should apply for our full-time
 <p>
 For full information, read our visa information for international students page.
 </p>
-            <div className="">
+            {/* <div className="">
                 <Button 
                 link='/'
                 class="btn btn-light"
@@ -77,7 +79,23 @@ For full information, read our visa information for international students page.
                 class="btn btn-blue border-white text-light"
                 btnName="Apply Now: Weekend"
                 />
-                </div>
+                </div> */}
+
+<div className="col-md-6 ">
+
+<Modal 
+    className="btn btn-light"
+    btnName="Apply Now: Weekday"
+/>
+</div>
+<div className="col-md-6 ">
+
+
+<Modal 
+className="btn btn-blue border-white text-light"
+btnName="Apply Now: Weekend"
+/>
+</div>
             </div>
         </div>
     </div>
